@@ -1,4 +1,5 @@
 import './App.css';
+import About from './components/About/About';
 import Intro from './components/Intro/Intro';
 import Navbar from './components/Navbar/Navbar';
 
@@ -7,7 +8,8 @@ function App() {
     <div className="App">
       <Navbar/>
       <Intro/>
-      {/*quede ne min 50:42*/}
+      <About/>
+      {/*quede ne 1:00:00 */}
     </div>
   );
 }

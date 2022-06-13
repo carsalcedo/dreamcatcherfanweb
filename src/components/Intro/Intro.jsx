@@ -14,7 +14,7 @@ const Intro = () => {
             <div className="i-name">
                 <span>Dream of me!</span>
                 <span>DreamCatcher</span>
-                <span>formerly known as MINX (Hangul: 밍스), is a South Korean girl group formed by
+                <span>Formerly known as MINX (Hangul: 밍스), is a South Korean girl group formed by
                      Happy Face Entertainment. It is made up of seven members: JiU, SuA, Siyeon, Handong, Yoohyeon, Dami, and Gahyeon. They officially debuted on January 13, 2017 with the single album Nightmare.</span>
             </div>
 
