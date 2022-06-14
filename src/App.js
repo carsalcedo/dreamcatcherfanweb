@@ -1,5 +1,6 @@
 import './App.css';
 import About from './components/About/About';
+import Albums from './components/Albums/Albums';
 import Intro from './components/Intro/Intro';
 import Navbar from './components/Navbar/Navbar';
 
@@ -9,7 +10,8 @@ function App() {
       <Navbar/>
       <Intro/>
       <About/>
-      {/*quede ne 1:00:00 */}
+      <Albums/>
+      {/* quede en la hora 1:16:00 */}
     </div>
   );
 }
