@@ -11,16 +11,18 @@ const Navbar = () => {
         <div className="n-right">
             <div className="n-list">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Producers</li>
-                    <li>Discography</li>
-                    <li>Members</li>
+                    <li><a href='#home' style={{textDecoration: 'none'}}>Home</a></li>
+                    <li><a href='#about' style={{textDecoration: 'none'}}>About</a></li>
+                    <li><a href='#producer' style={{textDecoration: 'none'}}>Producers</a></li>
+                    <li><a href='#discography' style={{textDecoration: 'none'}}>Discography</a></li>
+                    <li><a href='#members' style={{textDecoration: 'none'}}>Members</a></li>
                 </ul>
             </div>
+            <a href="#contact">
             <button className="button n-button">
                 Contact them
             </button>
+            </a>
         </div>
     </div>
   )

@@ -35,7 +35,10 @@
     list-style-type: none;
 }
 
-.n-list>ul>li:hover{
+.n-list>ul>li>a{
+    color: var(--black);
+}
+.n-list>ul>li>a:hover{
     cursor: pointer;
     color: var(--yellow);
 }
