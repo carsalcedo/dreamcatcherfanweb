@@ -13,7 +13,6 @@
 }
 
 .awesome > :nth-child(1){
-    color: var(--black);
     font-size: 2.5rem;
     font-weight: bold;
 }
@@ -52,4 +51,26 @@
 .s-blur1{
     left: -50rem;
     top:13rem
+}
+
+@media screen and (max-width: 400px) {
+    .about{
+        margin-top: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 66rem;
+        padding: 0;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 21rem;
+    }
+
+    .cards>*{
+        position: static;
+        display: flex;
+        justify-content: center;
+    }
 }

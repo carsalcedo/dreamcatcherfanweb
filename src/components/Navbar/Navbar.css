@@ -2,6 +2,10 @@
     height: 10vh;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    padding: 0 5rem;
 }
 
 .n-left{
@@ -36,13 +40,24 @@
 }
 
 .n-list>ul>li>a{
-    color: var(--black);
+    color: var(--yellow);
 }
+
 .n-list>ul>li>a:hover{
     cursor: pointer;
-    color: var(--yellow);
+    color: var(--purple);
 }
 
 .n-button{
     flex: 2;
+}
+
+@media screen and (max-width: 500px) {
+    .n-list{
+        display: none;
+    }
+
+    .n-button{
+        display: none;
+    }
 }

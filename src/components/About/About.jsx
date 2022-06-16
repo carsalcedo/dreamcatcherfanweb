@@ -5,8 +5,10 @@ import emoji from '../../img/heartemoji.png'
 import glasses from '../../img/glasses.png'
 import humble from '../../img/humble.png'
 import image from './group.jpg'
+import {motion} from 'framer-motion'
 
 const About = () => {
+  const transition = {duration : 2, type: 'spring'}
   return (
     <div className="about" id="about">
       <div className="awesome">
@@ -27,26 +29,35 @@ const About = () => {
       </div>
       <div className="cards">
 
-       <div style={{left: '15rem'}}>
+       <motion.div
+         initial={{left: '25rem'}}
+         whileInView={{left: '15rem'}}
+         transition={transition}>
         <Card 
           emoji = {emoji}
           heading = {'Insomnia'}
           detail = {'Fan club official of Dreamcatcher.'}/>
-       </div>
+       </motion.div>
 
-       <div style={{left: '-3rem', top: '15rem'}}>
+       <motion.div
+         initial={{left: '-8rem', top: '15rem'}}
+         whileInView={{left: '-3rem'}}
+         transition={transition}>
         <Card 
           emoji = {glasses}
           heading = {'Dreamer Company'}
           detail = {'South Korean entertainment company'}/>
-       </div>
+       </motion.div>
 
-       <div style={{left: '22rem', top: '23rem'}}>
+       <motion.div 
+        initial={{left: '22rem', top: '28rem'}}
+        whileInView={{top: '23rem'}}
+        transition={transition}>
         <Card 
           emoji = {humble}
           heading = {'Debut'}
           detail = {'Korea: January 13 of 2017'}/>
-       </div>
+       </motion.div>
        <div className="blur s-blur1" style={{background: 'var(--purple)' , top: '2rem', left: '30rem'} }></div>
 
       </div>

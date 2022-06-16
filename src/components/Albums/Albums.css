@@ -25,6 +25,7 @@
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 2rem;
+    color: black;
 }
 
 .circle::before{
@@ -43,3 +44,9 @@
     color: var(--purple);
 }
 
+@media screen and (max-width: 400px) {
+    .albums{
+        margin-top: 30rem;
+        gap: 4rem;
+    }
+}

@@ -1,7 +1,7 @@
 .producers{
     padding: 0rem 3rem;
     display: flex;
-    height: 90vh;
+    height: 50vh;
 }
 
 .w-right{
@@ -85,4 +85,27 @@
     background-color: var(--yellow);
     left: 18rem;
     top: 8rem;
+}
+
+@media screen and (max-width: 500px) {
+    .producers{
+        flex-direction: column;
+        height: 55rem;
+        padding: 0;
+        gap: 5rem;
+    }
+    .w-right{
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        transform: scale(.8);
+    }
+
+    .w-maincircle{
+        position: static;
+    }
+
+    .w-backCircle{
+        left: 10rem!important;
+    }
 }

@@ -20,7 +20,7 @@
 .button{
   border-radius: 2.2rem;
   border: none;
-  color: #fff;
+  color: white;
   font-size: 1rem;
   padding: .30rem 1.7rem .30rem 1.7rem;
   background: linear-gradient(180deg, #f2c763 26.71%, #8a2a2b 90.36%);
@@ -32,4 +32,10 @@
   cursor: pointer;
   color: var(--yellow);
   border: 1px solid var(--yellow);
+}
+
+@media screen and (max-width: 400px) {
+  .App{
+    padding: .5rem 1rem;
+  }
 }

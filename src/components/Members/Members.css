@@ -66,3 +66,14 @@
 .t-wrapper .swiper-pagination-bullet-active{
     background: var(--yellow);
 }
+
+@media screen and (max-width: 500px) {
+    .t-wrapper{
+        padding: 0;
+    }
+
+    .members > img{
+        width: 70px;
+        height: 70px;
+    }
+}

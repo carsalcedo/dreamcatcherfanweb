@@ -5,8 +5,10 @@ import logo2 from '../../img/logo2.jpg'
 import logo3 from '../../img/logo3.png'
 import logo4 from '../../img/logo4.jpg'
 import logo5 from '../../img/loguito2.png'
+import {motion} from 'framer-motion'
 
 const Producers = () => {
+
   return (
     <div className="producers" id='producer'>
       <div className="awesome">
@@ -25,7 +27,12 @@ const Producers = () => {
         <div className="blur s-blur1" style={{background: 'rgb(238 210 255)', top: '20rem', left: '1rem'}}></div>
       </div>
       <div className="w-right">
-        <div className="w-maincircle">
+        <motion.div
+         initial={{rotate: 45}}
+         whileInView={{rotate: 0}}
+         viewport={{margin: '-40px'}}
+         transition={{duration: 3.5, type: 'spring'}}
+         className="w-maincircle">
             <div className="w-seccircle">
                 <img src={logo1} alt="dreamcatcher" />
             </div>
@@ -41,7 +48,7 @@ const Producers = () => {
             <div className="w-seccircle">
                 <img src={logo5} alt="dreamcatcher" />
             </div>
-        </div>
+        </motion.div>
         <div className="w-backCircle purCircle"></div>
         <div className="w-backCircle yellowCircle"></div>
       </div>
